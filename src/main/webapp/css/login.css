@@ -1,0 +1,67 @@
+h2{
+font-size:12px;
+font-family:"Microsoft YaHei","微软雅黑","SimSun","宋体";
+color:#FFFFFF;
+letter-spacing:3px;
+}
+#bj{
+position:absolute;
+margin:0;
+padding:0;
+background:url(../img/LoginImg/Back.jpg) center;
+height:100%;
+width:100%;
+}
+
+#login_bj{
+position:absolute;
+top:48%; 
+left:40%; 
+margin-top:-100px; 
+margin-left:-154px;
+width:553px;
+height:364px;
+}
+#loginback_up{
+position:relative;
+height:259px;
+background:url(../img/LoginImg/loginback_up.jpg) no-repeat center;
+}
+#loginback_down{
+position:relative;
+height:105px;
+background:url(../img/LoginImg/loginback_down.jpg) no-repeat center;
+}
+#login_title{
+position:relative;
+left:32px;
+top:4px;
+width:400;
+}
+#login_logo{
+position:relative;
+top:40px;
+left:34px;
+width:400;
+}
+#login_login{
+position:relative;
+top:72px;
+width:553;
+}
+
+
+.txtname{
+font-size:18px;
+font-family:"SimSun","宋体";
+font-weight:bold;
+letter-spacing:4px;
+color:#FFFFFF;
+}
+.textfield{
+font-size:13px;
+color:#000000;
+background-color: #FCFDFE;
+border-right: 0px groove #91c0e3;
+width:198px;
+}
