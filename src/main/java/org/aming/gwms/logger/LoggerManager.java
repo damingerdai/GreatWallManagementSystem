@@ -1,6 +1,8 @@
 package org.aming.gwms.logger;
 
 import com.google.common.collect.Maps;
+
+import org.aming.gwms.constants.Constants;
 import org.slf4j.LoggerFactory;
 
 import java.util.Map;
@@ -10,7 +12,7 @@ import java.util.Map;
  * @author daming
  * @version 2017/6/22.
  */
-public class AmingLoggerManager {
+public class LoggerManager {
     /**
      * 按照日志记录器的名字存放不同日志记录器的集合
      */
@@ -27,5 +29,9 @@ public class AmingLoggerManager {
             loggerMap.put(loggerName,new AmingLogger(LoggerFactory.getLogger(loggerName)));
         }
         return loggerMap.get(loggerName);
+    }
+    
+    public static AmingLogger getErrorLogger(){
+    	return getLogger(Constants.LOG_ERROR);
     }
 }
