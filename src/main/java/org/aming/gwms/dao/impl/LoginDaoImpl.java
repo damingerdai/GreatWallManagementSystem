@@ -7,8 +7,9 @@ import org.aming.gwms.dao.LoginDao;
  * @version 2017/7/4.
  */
 public class LoginDaoImpl implements LoginDao {
+	
 
-    private final static String SQL_VERIFY = "SELECT * ";
+    private final static String SQL_VERIFY = "SELECT COUNT(SELECT COUNT(empid) FROM employee WHERE username = ? AND `password` = ? ";
 
     public int verify(String name, String password) {
         return 0;
