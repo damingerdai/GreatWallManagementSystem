@@ -88,7 +88,7 @@ public class AmingLogger {
 			logger.warn(msg);
 		}
 	}
-	
+
 	/**
 	 * 如果默认的日志管理器支持警告信息<br/>
 	 * 则警告信息
@@ -96,9 +96,9 @@ public class AmingLogger {
 	 * @param msg
 	 * @param obj
 	 */
-	public void warn(String msg,Object...obj){
-		if(logger.isWarnEnabled()){
-			logger.warn(msg,obj);
+	public void warn(String msg, Object... obj) {
+		if (logger.isWarnEnabled()) {
+			logger.warn(msg, obj);
 		}
 	}
 
@@ -113,7 +113,7 @@ public class AmingLogger {
 			logger.error(msg);
 		}
 	}
-	
+
 	/**
 	 * 如果默认的日志管理器支持报错信息<br/>
 	 * 则报错信息
@@ -121,9 +121,9 @@ public class AmingLogger {
 	 * @param msg
 	 * @param obj
 	 */
-	public void error(String msg,Object...obj){
-		if(logger.isErrorEnabled()){
-			logger.error(msg,obj);
+	public void error(String msg, Object... obj) {
+		if (logger.isErrorEnabled()) {
+			logger.error(msg, obj);
 		}
 	}
 }
