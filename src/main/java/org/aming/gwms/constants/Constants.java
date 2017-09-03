@@ -16,4 +16,9 @@ public final class Constants {
      * 异常信息替换的后置位
      */
     public static final String ERROR_REPLACE_SUFFIX = "\\}";
+    
+    /**
+     * 全局错误日志
+     */
+    public static final String LOG_ERROR = "error.logger";
 }
