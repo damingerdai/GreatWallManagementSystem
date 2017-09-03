@@ -15,7 +15,7 @@ public class ExceptionBuilder {
      */
     private static AmingLogger logger = LoggerManager.getLogger(ExceptionBuilder.class.getName());
 
-    public static AmingException buildAmingEzception(String errorCode,Throwable cause){
+    public static AmingException buildAmingException(String errorCode,Throwable cause){
         return null;
     }
 
