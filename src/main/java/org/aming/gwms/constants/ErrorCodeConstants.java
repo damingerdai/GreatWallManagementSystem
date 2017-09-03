@@ -6,5 +6,7 @@ package org.aming.gwms.constants;
  *
  */
 public class ErrorCodeConstants {
-	public static final String DATASOURCE_ERROR = "ERROR_01";
+	public static final String ERROR_NEW_CONNECTION = "ERROR_01";
+	
+	public static final String ERRO_RELASE_CONNECTION = "ERROR_02";
 }
