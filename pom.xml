@@ -1,87 +1,102 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>org.aming</groupId>
-    <artifactId>great.wall.manage.system</artifactId>
-    <packaging>war</packaging>
-    <version>1.0.0</version>
-    <name>great.wall.manage.system Maven Webapp</name>
-    <url>http://maven.apache.org</url>
-    <dependencies>
-        <!-- ##############工具类###################-->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>22.0</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>1.10</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
-        </dependency>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.aming</groupId>
+	<artifactId>great.wall.manage.system</artifactId>
+	<packaging>war</packaging>
+	<version>1.0.0</version>
+	<name>great.wall.manage.system Maven Webapp</name>
+	<url>http://maven.apache.org</url>
 
-        <!-- ##############日志框架###################-->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.25</version>
-        </dependency>
+	<properties>
+		<jdk.version>1.8</jdk.version>
+	</properties>
 
-        <!-- ##############Java Web项目jar###################-->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
-            <scope>provided</scope>
-        </dependency>
+	<dependencies>
+		<!-- ##############工具类################### -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>22.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.10</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
 
-        <!-- ##############数据库###################-->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>6.0.6</version>
-        </dependency>
-        <!-- ##############数据库连接池###################-->
-        <dependency>
-        	<groupId>c3p0</groupId>
-        	<artifactId>c3p0</artifactId>
-        	<version>0.9.1.2</version>
-        </dependency>
+		<!-- ##############日志框架################### -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.25</version>
+		</dependency>
 
-        <!-- ##############测试###################-->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+		<!-- ##############Java Web项目jar################### -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
 
-    <profiles>
-        <profile>
-            <id>GWMS_UAT</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
-                <jdbc.url>jdbc:mysql://localhost:3306/creatwall</jdbc.url>
-                <jdbc.username>root</jdbc.username>
-                <jdbc.password>root</jdbc.password>
-            </properties>
-        </profile>
-    </profiles>
-    <build>
-        <finalName>gwms</finalName>
-    </build>
+		<!-- ##############数据库################### -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>6.0.6</version>
+		</dependency>
+		<!-- ##############数据库连接池################### -->
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.2</version>
+		</dependency>
+
+		<!-- ##############测试################### -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>GWMS_UAT</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
+				<jdbc.url>jdbc:mysql://localhost:3306/creatwall</jdbc.url>
+				<jdbc.username>root</jdbc.username>
+				<jdbc.password>root</jdbc.password>
+			</properties>
+		</profile>
+	</profiles>
+	<build>
+		<finalName>gwms</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${jdk.version}</source>
+					<target>${jdk.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
