@@ -31,8 +31,15 @@ public class AmingException extends RuntimeException {
      * @param cause
      */
     public AmingException(String errorCode,String errorMsg,Throwable cause){
+        super();
         this.errorCode = errorCode;
         this.errorMsg = errorMsg;
+        this.cause = cause;
+    }
+
+    public AmingException(String errorCode,Throwable cause){
+        super();
+        this.errorCode = errorCode;
         this.cause = cause;
     }
 
