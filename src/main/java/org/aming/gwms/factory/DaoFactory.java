@@ -8,18 +8,17 @@ import java.util.Map;
 
 /**
  * Dao工厂
+ * 
  * @author daming
  * @version 2017/7/4.
  */
 public class DaoFactory {
+	
+	public static LoginDao getLoginDao(){
+		return DaoHolder.loginDao;
+	}
 
-    private static Map<Class<?>,Object> currentMap = Maps.newConcurrentMap();
-
-    public static LoginDao buildLoginDao(){
-       if(currentMap.get(LoginDao.class) == null){
-           LoginDaoImpl target = new LoginDaoImpl();
-
-       }
-        return null;
-    }
+	private static class DaoHolder {
+		private static LoginDao loginDao = new LoginDaoImpl();
+	}
 }
