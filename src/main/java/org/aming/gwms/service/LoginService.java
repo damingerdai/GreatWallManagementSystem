@@ -13,5 +13,5 @@ public interface LoginService {
      * @param user
      * @return
      */
-    int verify(User user);
+    boolean verify(User user);
 }
