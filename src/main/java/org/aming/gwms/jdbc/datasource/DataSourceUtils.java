@@ -19,6 +19,9 @@ import org.aming.gwms.utils.StringUtils;
  *
  */
 public abstract class DataSourceUtils {
+
+	private static final String ERROR_GET_CONNECTION = "fail to get connection";
+	private static final String ERROR_RELEASE_CONNECTION = "fail to release connection";
 	
 	private static ThreadLocal<Connection> localCache = new ThreadLocal<Connection>(); 
 	
@@ -26,7 +29,7 @@ public abstract class DataSourceUtils {
 		try{
 			return doGetConnection(dataSource);
 		} catch(Exception ex){
-			throw ExceptionBuilder.buildAmingException(ErrorCodeConstants.ERROR_NEW_CONNECTION,new String[]{StringUtils.reflectionToString(dataSource)},ex);
+			throw ExceptionBuilder.buildAmingException(ErrorCodeConstants.ERROR_CONNECTION,new String[]{ERROR_GET_CONNECTION,StringUtils.reflectionToString(dataSource)},ex);
 		}
 	}
 	
@@ -51,7 +54,7 @@ public abstract class DataSourceUtils {
 		try{
 			return doReleaseConnection(conn);
 		}catch(Exception ex){
-			throw ExceptionBuilder.buildAmingException(ErrorCodeConstants.ERROR_NEW_CONNECTION,new String[]{StringUtils.reflectionToString(conn)}, ex);
+			throw ExceptionBuilder.buildAmingException(ErrorCodeConstants.ERROR_CONNECTION,new String[]{ERROR_RELEASE_CONNECTION,StringUtils.reflectionToString(conn)}, ex);
 		}		
 	}
 	
@@ -64,7 +67,6 @@ public abstract class DataSourceUtils {
 			return closeConnection(conn);
 		}
 		return false;
-		
 	}
 	
 	private static boolean closeConnection(@Nonnull Connection conn) throws SQLException{

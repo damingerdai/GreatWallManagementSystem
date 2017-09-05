@@ -19,15 +19,18 @@ public class ExceptionBuilder {
     private static AmingLogger logger = LoggerManager.getLogger(ExceptionBuilder.class.getName());
 
     public static AmingException buildAmingException(String errorCode,Throwable cause){
-        return buildAmingException(errorCode,null,cause);
+        return new AmingException(errorCode,cause);
     }
     
-    public static AmingException buildAmingException(String errorCode,String[] parameters,Throwable cause){
-    	String errorMsg = Global.getProperty(errorCode);
-    	if(parameters != null && parameters.length < 1){
-    		errorMsg = StringUtils.replace(Constants.ERROR_REPLACE_PREFIX,Constants.ERROR_REPLACE_SUFFIX,errorMsg,parameters);
-    	}
-        return new AmingException(errorCode,errorMsg,cause);
+    public static AmingException buildAmingException(String errorCode,String[] parameters,Throwable cause) {
+        String errorMsg = Global.getProperty(errorCode);
+        if (parameters != null && parameters.length < 1) {
+            errorMsg = StringUtils.replace(Constants.ERROR_REPLACE_PREFIX, Constants.ERROR_REPLACE_SUFFIX, errorMsg, parameters);
+        }
+        return new AmingException(errorCode, errorMsg, cause);
     }
 
+    public static AmingException buildAmingException(String errorCode,String parameter,Throwable cause) {
+        return buildAmingException(errorCode,new String[]{parameter},cause);
+    }
 }
