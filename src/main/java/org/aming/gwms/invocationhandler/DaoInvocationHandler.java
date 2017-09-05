@@ -1,7 +1,7 @@
 package org.aming.gwms.invocationhandler;
 
 import org.aming.gwms.logger.AmingLogger;
-import org.aming.gwms.logger.AmingLoggerManager;
+import org.aming.gwms.logger.LoggerManager;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
  */
 public class DaoInvocationHandler implements InvocationHandler {
 
-    private static AmingLogger logger = AmingLoggerManager.getLogger("daologger");
+    private static AmingLogger logger = LoggerManager.getLogger("daologger");
 
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         return null;

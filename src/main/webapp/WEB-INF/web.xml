@@ -3,7 +3,7 @@
     <display-name>Great Wall Management System</display-name>
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>org.aming.gwms.servlets.LoginServlet</servlet-class>
+        <servlet-class>org.aming.gwms.servlet.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
