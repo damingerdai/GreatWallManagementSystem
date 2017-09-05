@@ -17,7 +17,7 @@
                     <img src="${pageContext.request.contextPath}/img/LoginImg/logo.jpg"/>
                 </div>
                 <div id="login_login">
-                    <form name="login">
+                    <form name="login" action="${pageContext.request.contextPath}/LoginServlet?method=verify" method="post">
                         <table align="center" width="533">
                             <tr>
                                 <td width="98" height="24px" align="right" class="txtname">员工号</td>
@@ -33,8 +33,11 @@
                             </tr>
                              <tr height="38">
                                 <td height="38" colspan="2" align="center">
-						            <img src="${pageContext.request.contextPath}/img/LoginImg/button_login.jpg" id="loginbotton"  onclick="location.href='index.jsp'">
+                                    <button type="submit"style="background-image:url('img/LoginImg/button_login.jpg'); border:none"/>
+                                    <!--
+                                    <img src="${pageContext.request.contextPath}/img/LoginImg/button_login.jpg" type="submit">
 						            <img src="${pageContext.request.contextPath}/img/LoginImg/botton_close.jpg"/>
+						            -->
 						        </td>
 				             </tr>
                         </table>
