@@ -52,6 +52,22 @@ public class AmingLogger {
 		}
 	}
 
+
+	/**
+	 * 如果默认的日志管理器支持追踪信息<br/>
+	 * 则追踪信息
+	 *
+	 * @param msg
+	 *            信息
+	 * @param cause
+	 *            异常
+	 */
+	public void trace(String msg,Throwable cause) {
+		if (logger.isTraceEnabled()) {
+			logger.trace(msg, cause);
+		}
+	}
+
 	/**
 	 * 如果默认的日志管理器支持调试信息<br/>
 	 * 则调试信息
@@ -74,6 +90,19 @@ public class AmingLogger {
 	public void debug(String msg, Object... obj) {
 		if (logger.isDebugEnabled()) {
 			logger.debug(msg, obj);
+		}
+	}
+
+	/**
+	 * 如果默认的日志管理器支持调试信息<br/>
+	 * 则调试信息
+	 *
+	 * @param msg
+	 * @param cause
+	 */
+	public void debug(String msg, Throwable cause) {
+		if (logger.isDebugEnabled()) {
+			logger.debug(msg, cause);
 		}
 	}
 
@@ -103,6 +132,19 @@ public class AmingLogger {
 	}
 
 	/**
+	 * 如果默认的日志管理器支持警告信息<br/>
+	 * 则警告信息
+	 *
+	 * @param msg
+	 * @param cause
+	 */
+	public void warn(String msg, Throwable cause) {
+		if (logger.isWarnEnabled()) {
+			logger.warn(msg, cause);
+		}
+	}
+
+	/**
 	 * 如果默认的日志管理器支持报错信息<br/>
 	 * 则报错信息
 	 * 
@@ -124,6 +166,19 @@ public class AmingLogger {
 	public void error(String msg, Object... obj) {
 		if (logger.isErrorEnabled()) {
 			logger.error(msg, obj);
+		}
+	}
+
+	/**
+	 * 如果默认的日志管理器支持报错信息<br/>
+	 * 则报错信息
+	 *
+	 * @param msg
+	 * @param cause
+	 */
+	public void error(String msg, Throwable cause) {
+		if (logger.isErrorEnabled()) {
+			logger.error(msg, cause);
 		}
 	}
 }
