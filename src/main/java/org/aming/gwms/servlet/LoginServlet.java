@@ -1,6 +1,7 @@
 package org.aming.gwms.servlet;
 
 import org.aming.gwms.domain.User;
+import org.aming.gwms.factory.ServiceFactory;
 import org.aming.gwms.service.LoginService;
 
 import javax.servlet.ServletException;
@@ -17,7 +18,9 @@ import java.lang.reflect.Method;
  */
 public class LoginServlet extends HttpServlet {
 
-    private LoginService loginService;
+	private static final long serialVersionUID = -3425006368756207865L;
+	
+	private LoginService loginService = ServiceFactory.getLoginService();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -41,5 +44,11 @@ public class LoginServlet extends HttpServlet {
     	String empid = request.getParameter("empid");
 		String password = request.getParameter("password");
 		User user = new User(empid, password);
+		System.out.println("user:"+user);
+		if(loginService.verify(user)){
+			System.out.println("找到用户："+user);
+		} else{
+			System.out.println("没有找到用户："+user);
+		}
     }
 }
