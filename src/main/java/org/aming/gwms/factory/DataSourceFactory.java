@@ -24,7 +24,11 @@ public class DataSourceFactory {
 	
 	public static DataSource getDataSource(){
 		if(dataSource == null){
-			dataSource = newDataSource();
+			synchronized (DataSourceFactory.class){
+				if(dataSource == null){
+					dataSource = newDataSource();
+				}
+			}
 		}
 		return dataSource;
 	}
