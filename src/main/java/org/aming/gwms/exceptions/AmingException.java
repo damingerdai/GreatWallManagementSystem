@@ -37,9 +37,23 @@ public class AmingException extends RuntimeException {
         this.cause = cause;
     }
 
+    /**
+     * 初始化
+     * @param errorCode
+     * @param cause
+     */
     public AmingException(String errorCode,Throwable cause){
         super();
         this.errorCode = errorCode;
+        this.cause = cause;
+    }
+
+    /**
+     * 初始化
+     * @param cause
+     */
+    public AmingException(Throwable cause){
+        super();
         this.cause = cause;
     }
 
