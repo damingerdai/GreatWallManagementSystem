@@ -17,13 +17,13 @@ import java.util.List;
 
 /**
  * jdbc模板
- * 参考：
- * <p>org.springframework.jdbc.core.JdbcTemplate</p>
- * <p>org.springframework.jdbc.support.JdbcUtils</p>
- *
- * @author daming
- * @version 2017/7/4.
- */
+        * 参考：
+        * <p>org.springframework.jdbc.core.JdbcTemplate</p>
+        * <p>org.springframework.jdbc.support.JdbcUtils</p>
+        *
+        * @author daming
+        * @version 2017/7/4.
+        */
 public class JdbcUtils {
 
     private static final AmingLogger logger = LoggerManager.getLogger(JdbcUtils.class.getName());
