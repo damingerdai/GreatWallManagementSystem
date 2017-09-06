@@ -44,7 +44,6 @@ public class LoginServlet extends HttpServlet {
     	String empid = request.getParameter("empid");
 		String password = request.getParameter("password");
 		User user = new User(empid, password);
-		System.out.println("user:"+user);
 		if(loginService.verify(user)){
 			System.out.println("找到用户："+user);
 		} else{
