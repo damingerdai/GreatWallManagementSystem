@@ -126,7 +126,7 @@
 				<jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
 				<jdbc.url>jdbc:mysql://localhost:3306/creatwall</jdbc.url>
 				<jdbc.username>root</jdbc.username>
-				<jdbc.password>root</jdbc.password>
+				<jdbc.password>267552</jdbc.password>
 			</properties>
 		</profile>
 	</profiles>
