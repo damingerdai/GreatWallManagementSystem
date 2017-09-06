@@ -11,9 +11,9 @@ import org.aming.gwms.utils.EncodeUtils;
 public class LoginDaoImpl implements LoginDao {
 	
 
-    private final static String SQL_VERIFY_USER = "SELECT COUNT(SELECT COUNT(empid) FROM employee WHERE empid = ? AND `password` = ? ";
+    private final static String SQL_VERIFY_USER = " SELECT COUNT(empid) FROM employee WHERE empid = ? AND `password` = ? ";
 
-    public int verify(String name, String password) {
-        return JdbcUtils.queryCount(SQL_VERIFY_USER,new Object[]{name, EncodeUtils.md5Hex(password)});
+    public int verify(String empId, String password) {
+        return JdbcUtils.queryCount(SQL_VERIFY_USER,new Object[]{empId, EncodeUtils.md5Hex(password)});
     }
 }
