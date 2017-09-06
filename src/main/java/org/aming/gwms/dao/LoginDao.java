@@ -6,5 +6,5 @@ package org.aming.gwms.dao;
  */
 public interface LoginDao {
 
-    int verify(String name,String password);
+    int verify(String empId,String password);
 }
