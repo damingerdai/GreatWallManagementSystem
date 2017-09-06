@@ -33,11 +33,9 @@
                             </tr>
                              <tr height="38">
                                 <td height="38" colspan="2" align="center">
-                                    <button type="submit"style="background-image:url('img/LoginImg/button_login.jpg'); border:none"/>
-                                    <!--
                                     <img src="${pageContext.request.contextPath}/img/LoginImg/button_login.jpg" type="submit">
 						            <img src="${pageContext.request.contextPath}/img/LoginImg/botton_close.jpg"/>
-						            -->
+						            <button type="submit" value="提交">提交</button>
 						        </td>
 				             </tr>
                         </table>
