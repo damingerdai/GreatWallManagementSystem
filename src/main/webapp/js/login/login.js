@@ -3,4 +3,6 @@
  */
 function LoginIn(){
 
+    document.getElementById("login").submit();
+    alert(document.getElementById("login"));
 }

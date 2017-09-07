@@ -9,4 +9,6 @@ public class ErrorCodeConstants {
 	public static final String ERROR_CONNECTION = "ERROR_01";
 	
 	public static final String ERROR_TRANSACTION = "ERROR_02";
+
+	public static final String ERROR_DAO = "ERROR_03";
 }

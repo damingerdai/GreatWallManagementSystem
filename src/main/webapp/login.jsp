@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="tags" tagdir="/WEB-INF/tags/login"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="tags" tagdir="/WEB-INF/tags/login" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +18,14 @@
                     <img src="${pageContext.request.contextPath}/img/LoginImg/logo.jpg"/>
                 </div>
                 <div id="login_login">
-                    <form name="login" action="${pageContext.request.contextPath}/LoginServlet?method=verify" method="post">
+                    <c:if test="${!empty requestScope.error}">
+                        <div align="center">
+                         <span style="color: red">
+                                 ${requestScope.error}
+                         </span>
+                        </div>
+                    </c:if>
+                    <form id="login" name="login" action="${pageContext.request.contextPath}/LoginServlet?method=verify" method="post">
                         <table align="center" width="533">
                             <tr>
                                 <td width="98" height="24px" align="right" class="txtname">员工号</td>
@@ -33,9 +41,8 @@
                             </tr>
                              <tr height="38">
                                 <td height="38" colspan="2" align="center">
-                                    <img src="${pageContext.request.contextPath}/img/LoginImg/button_login.jpg" type="submit">
+                                    <img src="${pageContext.request.contextPath}/img/LoginImg/button_login.jpg" onclick="LoginIn()">
 						            <img src="${pageContext.request.contextPath}/img/LoginImg/botton_close.jpg"/>
-						            <button type="submit" value="提交">提交</button>
 						        </td>
 				             </tr>
                         </table>

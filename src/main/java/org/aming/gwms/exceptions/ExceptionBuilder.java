@@ -16,7 +16,7 @@ public class ExceptionBuilder {
     /**
      * 内置的日志记录器
      */
-    private static AmingLogger logger = LoggerManager.getLogger(ExceptionBuilder.class.getName());
+    private static AmingLogger logger = LoggerManager.getLogger(Constants.LOG_ERROR);
 
     public static AmingException buildAmingException(String errorCode,Throwable cause){
         return new AmingException(errorCode,cause);
@@ -32,5 +32,13 @@ public class ExceptionBuilder {
 
     public static AmingException buildAmingException(String errorCode,String parameter,Throwable cause) {
         return buildAmingException(errorCode,new String[]{parameter},cause);
+    }
+
+    private static void log(AmingException ex){
+        if(StringUtils.isBlank(ex.getErrorMsg())){
+            logger.error("[Error Code:{}] [Error Cause:{}]",ex.getErrorCode(),ex.getCause());
+        }else{
+            logger.error("[Error Code:{}] [Error Message:{}] [Error Cause:{}]",ex.getErrorCode(),ex.getErrorMsg(),ex.getCause());
+        }
     }
 }

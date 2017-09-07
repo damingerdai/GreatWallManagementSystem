@@ -9,6 +9,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  */
 public class AmingException extends RuntimeException {
 
+    private static final String DEFAULT_ERROR_CODE = "ERROR_00";
+
     /**
      * 异常代码
      */
@@ -54,7 +56,21 @@ public class AmingException extends RuntimeException {
      */
     public AmingException(Throwable cause){
         super();
+        this.errorCode = DEFAULT_ERROR_CODE;
         this.cause = cause;
+    }
+
+    public String getErrorCode() {
+        return errorCode;
+    }
+
+    public String getErrorMsg() {
+        return errorMsg;
+    }
+
+    @Override
+    public Throwable getCause() {
+        return cause;
     }
 
     @Override

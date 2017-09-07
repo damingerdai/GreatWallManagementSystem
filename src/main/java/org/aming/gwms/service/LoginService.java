@@ -2,6 +2,8 @@ package org.aming.gwms.service;
 
 import org.aming.gwms.domain.User;
 
+import javax.servlet.http.HttpSession;
+
 /**
  * 登录模块的service
  * @author daming
@@ -14,4 +16,6 @@ public interface LoginService {
      * @return
      */
     boolean verify(User user);
+
+    boolean login(User user,HttpSession session);
 }

@@ -24,7 +24,7 @@ public class User {
 	/**
 	 * 用户权限
 	 */
-	private String privilege;
+	private String depId;
 	/**
 	 * empId的get方法
 	 * @return
@@ -68,18 +68,18 @@ public class User {
 		this.password = password;
 	}
 	/**
-	 * privilege的get方法
+	 * depId
 	 * @return
 	 */
-	public String getPrivilege() {
-		return privilege;
+	public String getDepId() {
+		return depId;
 	}
 	/**
-	 * privilege的set方法
-	 * @param privilege
+	 * depId
+	 * @param depId
 	 */
-	public void setPrivilege(String privilege) {
-		this.privilege = privilege;
+	public void setDepId(String depId) {
+		this.depId = depId;
 	}
 	/**
 	 * User的构造方法
@@ -89,12 +89,12 @@ public class User {
 	 * @param password
 	 * @param privilege
 	 */
-	public User(String empId, String username, String password, String privilege) {
+	public User(String empId, String username, String password, String depId) {
 		super();
 		this.empId = empId;
 		this.username = username;
 		this.password = password;
-		this.privilege = privilege;
+		this.depId = depId;
 	}
 	/**
 	 * User的默认构造方法
