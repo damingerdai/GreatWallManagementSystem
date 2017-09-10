@@ -1,0 +1,540 @@
+
+.ui-write {
+	TEXT-INDENT: -99999px; WIDTH: 16px; DISPLAY: block; BACKGROUND-REPEAT: no-repeat; HEIGHT: 16px; OVERFLOW: hidden;
+	margin-right:4px;
+}
+.ui-write {
+	BACKGROUND-IMAGE: url(../img/ui-icons_ffffff_256x240.png)
+}
+.person {
+	BACKGROUND-POSITION: -144px -96px
+}
+.power {
+	BACKGROUND-POSITION: 0px -176px
+}
+
+/*
+.ui-blue {
+	BACKGROUND-IMAGE: url(images/ui-icons_228ef1_256x240.png)
+}
+.ui-black {
+	BACKGROUND-IMAGE: url(images/ui-icons_222222_256x240.png)
+}
+.carat-1-n {
+	BACKGROUND-POSITION: 0px 0px
+}
+.carat-1-ne {
+	BACKGROUND-POSITION: -16px 0px
+}
+.carat-1-e {
+	BACKGROUND-POSITION: -32px 0px
+}
+.carat-1-se {
+	BACKGROUND-POSITION: -48px 0px
+}
+.carat-1-s {
+	BACKGROUND-POSITION: -64px 0px
+}
+.carat-1-sw {
+	BACKGROUND-POSITION: -80px 0px
+}
+.carat-1-w {
+	BACKGROUND-POSITION: -96px 0px
+}
+.carat-1-nw {
+	BACKGROUND-POSITION: -112px 0px
+}
+.carat-2-n-s {
+	BACKGROUND-POSITION: -128px 0px
+}
+.carat-2-e-w {
+	BACKGROUND-POSITION: -144px 0px
+}
+.triangle-1-n {
+	BACKGROUND-POSITION: 0px -16px
+}
+.triangle-1-ne {
+	BACKGROUND-POSITION: -16px -16px
+}
+.triangle-1-e {
+	BACKGROUND-POSITION: -32px -16px
+}
+.triangle-1-se {
+	BACKGROUND-POSITION: -48px -16px
+}
+.triangle-1-s {
+	BACKGROUND-POSITION: -64px -16px
+}
+.triangle-1-sw {
+	BACKGROUND-POSITION: -80px -16px
+}
+.triangle-1-w {
+	BACKGROUND-POSITION: -96px -16px
+}
+.triangle-1-nw {
+	BACKGROUND-POSITION: -112px -16px
+}
+.triangle-2-n-s {
+	BACKGROUND-POSITION: -128px -16px
+}
+.triangle-2-e-w {
+	BACKGROUND-POSITION: -144px -16px
+}
+.arrow-1-n {
+	BACKGROUND-POSITION: 0px -32px
+}
+.arrow-1-ne {
+	BACKGROUND-POSITION: -16px -32px
+}
+.arrow-1-e {
+	BACKGROUND-POSITION: -32px -32px
+}
+.arrow-1-se {
+	BACKGROUND-POSITION: -48px -32px
+}
+.arrow-1-s {
+	BACKGROUND-POSITION: -64px -32px
+}
+.arrow-1-sw {
+	BACKGROUND-POSITION: -80px -32px
+}
+.arrow-1-w {
+	BACKGROUND-POSITION: -96px -32px
+}
+.arrow-1-nw {
+	BACKGROUND-POSITION: -112px -32px
+}
+.arrow-2-n-s {
+	BACKGROUND-POSITION: -128px -32px
+}
+.arrow-2-ne-sw {
+	BACKGROUND-POSITION: -144px -32px
+}
+.arrow-2-e-w {
+	BACKGROUND-POSITION: -160px -32px
+}
+.arrow-2-se-nw {
+	BACKGROUND-POSITION: -176px -32px
+}
+.arrowstop-1-n {
+	BACKGROUND-POSITION: -192px -32px
+}
+.arrowstop-1-e {
+	BACKGROUND-POSITION: -208px -32px
+}
+.arrowstop-1-s {
+	BACKGROUND-POSITION: -224px -32px
+}
+.arrowstop-1-w {
+	BACKGROUND-POSITION: -240px -32px
+}
+.arrowthick-1-n {
+	BACKGROUND-POSITION: 0px -48px
+}
+.arrowthick-1-ne {
+	BACKGROUND-POSITION: -16px -48px
+}
+.arrowthick-1-e {
+	BACKGROUND-POSITION: -32px -48px
+}
+.arrowthick-1-se {
+	BACKGROUND-POSITION: -48px -48px
+}
+.arrowthick-1-s {
+	BACKGROUND-POSITION: -64px -48px
+}
+.arrowthick-1-sw {
+	BACKGROUND-POSITION: -80px -48px
+}
+.arrowthick-1-w {
+	BACKGROUND-POSITION: -96px -48px
+}
+.arrowthick-1-nw {
+	BACKGROUND-POSITION: -112px -48px
+}
+.arrowthick-2-n-s {
+	BACKGROUND-POSITION: -128px -48px
+}
+.arrowthick-2-ne-sw {
+	BACKGROUND-POSITION: -144px -48px
+}
+.arrowthick-2-e-w {
+	BACKGROUND-POSITION: -160px -48px
+}
+.arrowthick-2-se-nw {
+	BACKGROUND-POSITION: -176px -48px
+}
+.arrowthickstop-1-n {
+	BACKGROUND-POSITION: -192px -48px
+}
+.arrowthickstop-1-e {
+	BACKGROUND-POSITION: -208px -48px
+}
+.arrowthickstop-1-s {
+	BACKGROUND-POSITION: -224px -48px
+}
+.arrowthickstop-1-w {
+	BACKGROUND-POSITION: -240px -48px
+}
+.arrowreturnthick-1-w {
+	BACKGROUND-POSITION: 0px -64px
+}
+.arrowreturnthick-1-n {
+	BACKGROUND-POSITION: -16px -64px
+}
+.arrowreturnthick-1-e {
+	BACKGROUND-POSITION: -32px -64px
+}
+.arrowreturnthick-1-s {
+	BACKGROUND-POSITION: -48px -64px
+}
+.arrowreturn-1-w {
+	BACKGROUND-POSITION: -64px -64px
+}
+.arrowreturn-1-n {
+	BACKGROUND-POSITION: -80px -64px
+}
+.arrowreturn-1-e {
+	BACKGROUND-POSITION: -96px -64px
+}
+.arrowreturn-1-s {
+	BACKGROUND-POSITION: -112px -64px
+}
+.arrowrefresh-1-w {
+	BACKGROUND-POSITION: -128px -64px
+}
+.arrowrefresh-1-n {
+	BACKGROUND-POSITION: -144px -64px
+}
+.arrowrefresh-1-e {
+	BACKGROUND-POSITION: -160px -64px
+}
+.arrowrefresh-1-s {
+	BACKGROUND-POSITION: -176px -64px
+}
+.arrow-4 {
+	BACKGROUND-POSITION: 0px -80px
+}
+.arrow-4-diag {
+	BACKGROUND-POSITION: -16px -80px
+}
+.extlink {
+	BACKGROUND-POSITION: -32px -80px
+}
+.newwin {
+	BACKGROUND-POSITION: -48px -80px
+}
+.refresh {
+	BACKGROUND-POSITION: -64px -80px
+}
+.shuffle {
+	BACKGROUND-POSITION: -80px -80px
+}
+.transfer-e-w {
+	BACKGROUND-POSITION: -96px -80px
+}
+.transferthick-e-w {
+	BACKGROUND-POSITION: -112px -80px
+}
+.folder-collapsed {
+	BACKGROUND-POSITION: 0px -96px
+}
+.folder-open {
+	BACKGROUND-POSITION: -16px -96px
+}
+.document {
+	BACKGROUND-POSITION: -32px -96px
+}
+.document-b {
+	BACKGROUND-POSITION: -48px -96px
+}
+.note {
+	BACKGROUND-POSITION: -64px -96px
+}
+.mail-closed {
+	BACKGROUND-POSITION: -80px -96px
+}
+.mail-open {
+	BACKGROUND-POSITION: -96px -96px
+}
+.suitcase {
+	BACKGROUND-POSITION: -112px -96px
+}
+.comment {
+	BACKGROUND-POSITION: -128px -96px
+}
+
+.print {
+	BACKGROUND-POSITION: -160px -96px
+}
+.trash {
+	BACKGROUND-POSITION: -176px -96px
+}
+.locked {
+	BACKGROUND-POSITION: -192px -96px
+}
+.unlocked {
+	BACKGROUND-POSITION: -208px -96px
+}
+.bookmark {
+	BACKGROUND-POSITION: -224px -96px
+}
+.tag {
+	BACKGROUND-POSITION: -240px -96px
+}
+.home {
+	BACKGROUND-POSITION: 0px -112px
+}
+.flag {
+	BACKGROUND-POSITION: -16px -112px
+}
+.calendar {
+	BACKGROUND-POSITION: -32px -112px
+}
+.cart {
+	BACKGROUND-POSITION: -48px -112px
+}
+.pencil {
+	BACKGROUND-POSITION: -64px -112px
+}
+.clock {
+	BACKGROUND-POSITION: -80px -112px
+}
+.disk {
+	BACKGROUND-POSITION: -96px -112px
+}
+.calculator {
+	BACKGROUND-POSITION: -112px -112px
+}
+.zoomin {
+	BACKGROUND-POSITION: -128px -112px
+}
+.zoomout {
+	BACKGROUND-POSITION: -144px -112px
+}
+.search {
+	BACKGROUND-POSITION: -160px -112px
+}
+.wrench {
+	BACKGROUND-POSITION: -176px -112px
+}
+.gear {
+	BACKGROUND-POSITION: -192px -112px
+}
+.heart {
+	BACKGROUND-POSITION: -208px -112px
+}
+.star {
+	BACKGROUND-POSITION: -224px -112px
+}
+.link {
+	BACKGROUND-POSITION: -240px -112px
+}
+.cancel {
+	BACKGROUND-POSITION: 0px -128px
+}
+.plus {
+	BACKGROUND-POSITION: -16px -128px
+}
+.plusthick {
+	BACKGROUND-POSITION: -32px -128px
+}
+.minus {
+	BACKGROUND-POSITION: -48px -128px
+}
+.minusthick {
+	BACKGROUND-POSITION: -64px -128px
+}
+.close {
+	BACKGROUND-POSITION: -80px -128px
+}
+.closethick {
+	BACKGROUND-POSITION: -96px -128px
+}
+.key {
+	BACKGROUND-POSITION: -112px -128px
+}
+.lightbulb {
+	BACKGROUND-POSITION: -128px -128px
+}
+.scissors {
+	BACKGROUND-POSITION: -144px -128px
+}
+.clipboard {
+	BACKGROUND-POSITION: -160px -128px
+}
+.copy {
+	BACKGROUND-POSITION: -176px -128px
+}
+.contact {
+	BACKGROUND-POSITION: -192px -128px
+}
+.image {
+	BACKGROUND-POSITION: -208px -128px
+}
+.video {
+	BACKGROUND-POSITION: -224px -128px
+}
+.script {
+	BACKGROUND-POSITION: -240px -128px
+}
+.alert {
+	BACKGROUND-POSITION: 0px -144px
+}
+.info {
+	BACKGROUND-POSITION: -16px -144px
+}
+.notice {
+	BACKGROUND-POSITION: -32px -144px
+}
+.help {
+	BACKGROUND-POSITION: -48px -144px
+}
+.check {
+	BACKGROUND-POSITION: -64px -144px
+}
+.bullet {
+	BACKGROUND-POSITION: -80px -144px
+}
+.radio-off {
+	BACKGROUND-POSITION: -96px -144px
+}
+.radio-on {
+	BACKGROUND-POSITION: -112px -144px
+}
+.pin-w {
+	BACKGROUND-POSITION: -128px -144px
+}
+.pin-s {
+	BACKGROUND-POSITION: -144px -144px
+}
+.play {
+	BACKGROUND-POSITION: 0px -160px
+}
+.pause {
+	BACKGROUND-POSITION: -16px -160px
+}
+.seek-next {
+	BACKGROUND-POSITION: -32px -160px
+}
+.seek-prev {
+	BACKGROUND-POSITION: -48px -160px
+}
+.seek-end {
+	BACKGROUND-POSITION: -64px -160px
+}
+.seek-start {
+	BACKGROUND-POSITION: -80px -160px
+}
+.seek-first {
+	BACKGROUND-POSITION: -80px -160px
+}
+.stop {
+	BACKGROUND-POSITION: -96px -160px
+}
+.eject {
+	BACKGROUND-POSITION: -112px -160px
+}
+.volume-off {
+	BACKGROUND-POSITION: -128px -160px
+}
+.volume-on {
+	BACKGROUND-POSITION: -144px -160px
+}
+
+.signal-diag {
+	BACKGROUND-POSITION: -16px -176px
+}
+.signal {
+	BACKGROUND-POSITION: -32px -176px
+}
+.battery-0 {
+	BACKGROUND-POSITION: -48px -176px
+}
+.battery-1 {
+	BACKGROUND-POSITION: -64px -176px
+}
+.battery-2 {
+	BACKGROUND-POSITION: -80px -176px
+}
+.battery-3 {
+	BACKGROUND-POSITION: -96px -176px
+}
+.circle-plus {
+	BACKGROUND-POSITION: 0px -192px
+}
+.circle-minus {
+	BACKGROUND-POSITION: -16px -192px
+}
+.circle-close {
+	BACKGROUND-POSITION: -32px -192px
+}
+.circle-triangle-e {
+	BACKGROUND-POSITION: -48px -192px
+}
+.circle-triangle-s {
+	BACKGROUND-POSITION: -64px -192px
+}
+.circle-triangle-w {
+	BACKGROUND-POSITION: -80px -192px
+}
+.circle-triangle-n {
+	BACKGROUND-POSITION: -96px -192px
+}
+.circle-arrow-e {
+	BACKGROUND-POSITION: -112px -192px
+}
+.circle-arrow-s {
+	BACKGROUND-POSITION: -128px -192px
+}
+.circle-arrow-w {
+	BACKGROUND-POSITION: -144px -192px
+}
+.circle-arrow-n {
+	BACKGROUND-POSITION: -160px -192px
+}
+.circle-zoomin {
+	BACKGROUND-POSITION: -176px -192px
+}
+.circle-zoomout {
+	BACKGROUND-POSITION: -192px -192px
+}
+.circle-check {
+	BACKGROUND-POSITION: -208px -192px
+}
+.circlesmall-plus {
+	BACKGROUND-POSITION: 0px -208px
+}
+.circlesmall-minus {
+	BACKGROUND-POSITION: -16px -208px
+}
+.circlesmall-close {
+	BACKGROUND-POSITION: -32px -208px
+}
+.squaresmall-plus {
+	BACKGROUND-POSITION: -48px -208px
+}
+.squaresmall-minus {
+	BACKGROUND-POSITION: -64px -208px
+}
+.squaresmall-close {
+	BACKGROUND-POSITION: -80px -208px
+}
+.grip-dotted-vertical {
+	BACKGROUND-POSITION: 0px -224px
+}
+.grip-dotted-horizontal {
+	BACKGROUND-POSITION: -16px -224px
+}
+.grip-solid-vertical {
+	BACKGROUND-POSITION: -32px -224px
+}
+.grip-solid-horizontal {
+	BACKGROUND-POSITION: -48px -224px
+}
+.gripsmall-diagonal-se {
+	BACKGROUND-POSITION: -64px -224px
+}
+.grip-diagonal-se {
+	BACKGROUND-POSITION: -80px -224px
+}

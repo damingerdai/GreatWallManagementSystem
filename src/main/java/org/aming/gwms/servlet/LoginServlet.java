@@ -44,12 +44,15 @@ public class LoginServlet extends HttpServlet {
     	String empid = request.getParameter("empid");
 		String password = request.getParameter("password");
 		User user = new User(empid, password);
+		request.setAttribute("error","用户名或密码错误");
+		request.getRequestDispatcher("/login.jsp").forward(request,response);
+		/*
 		if(loginService.login(user,request.getSession())){
 			request.getRequestDispatcher("/index.jsp").forward(request,response);
 		} else{
 			request.setAttribute("error","用户名或密码错误");
 			request.getRequestDispatcher("/login.jsp").forward(request,response);
-		}
+		}*/
 		System.out.println(request+":"+response);
     }
 }

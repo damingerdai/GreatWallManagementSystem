@@ -1,0 +1,135 @@
+*{
+margin:0;
+padding:0;
+}
+html{scrollbar-face-color: #e7f4ff; scrollbar-shadow-color: #8a8a8a; scrollbar-highlight-color: #ffffff; scrollbar-3dlight-color: #ffffff; scrollbar-darkshadow-color: #ffffff; scrollbar-track-color:#ffffff; scrollbar-arrow-color: #8a8a8a;}
+body {margin: 0px;overflow-x:hidden;	border-top: 1px solid #0291c0; 	background-color:#EEFBFF;padding-bottom:10px;font-family:"Microsoft YaHei","微软雅黑","SimSun","宋体"; }
+
+a:link{   color:#0066CC;TEXT-DECORATION:none; }
+A:visited {	COLOR:#0066CC; TEXT-DECORATION:none; }
+A:active {	COLOR:#0066CC; TEXT-DECORATION: none;}
+a:hover{    color: #c75f3e; text-decoration:underline;}
+
+.head,.head_pop{width:100%;height:40px; background:url(../img/MainTopBack.png);border-bottom: 0px solid #accedd;	margin-bottom:10px;}
+.head_title,.head_pop_title{width:auto;	height:40px;color:#2e2e2e;}
+h1{font-size:14px; line-height:40px; text-indent:24px;}
+.head_title img,.head_pop_title img{ border:0; margin-bottom:-5px; margin-left:2px;}
+
+.content,.content2,.content3,.content_pop{ height:auto; float:left; margin-top:12px; margin-bottom:18px;overflow:hidden;}
+.content,.content3,.content2{ width:780px;}
+
+.content_pop{    width:724px;}
+
+.ItemBlockBorder,.ItemBlockBorder2,.ItemBlockBorder3,.pop_ItemBlockBorder {text-align: left;border:1px solid #accedd;	background:#FFFFFF; margin-right:8px; margin-left:24px;overflow:hidden;}
+.ItemBlock,.ItemBlock2,.pop_ItemBlock{	text-align: left;	border:0px solid #fFFFFF;	background:#FFFFFF;	margin:0px;	padding:8px 4px;overflow:hidden;}
+
+.ItemBlock3{border:0;margin:0px; overflow:scroll;}
+
+/*显示结果列表样式*/
+.datetable{	width:100%;	margin:0 0 2px 0;border-collapse:collapse;	vertical-align:middle;}
+.datetable2{width:992px;	margin:0 0 2px 0;border-collapse:collapse;}
+.datetable2 td{ }
+
+#stockdatetable{width:100%;	border-left:1px solid #91c0e3;	border-right:1px solid #91c0e3;	margin:0 0 2px 0;	border-collapse:collapse;	vertical-align:middle;}	
+#TableTitle td{ font-size:13px;	color:#fff;	height:32px;text-align:left; text-indent:11px; 	padding: 0;	background:#1e9eef;overflow:hidden; cursor:default;}
+#TableData td{	height:32px;	font-size:13px;	color:#2e2e2e;	margin:0;text-align:left; text-indent:11px;cursor:default;}
+#TableData tr:hover{ background:#d6f5ff}
+/***********************************************************************select样式*****************/
+.button11 {	width:108px;}
+.button12 {	width:98px;}
+
+
+/***************************************************************  text样式begin  ********/
+.textNum {
+/*	background-color:#91c0e3;*/
+	border: 0px solid #91c0e3;
+	font-family: "宋体";
+	text-align:center;
+	color:#CC6633;
+	vertical-align:middle;
+	font-size: 12px;
+	width:80px;
+	
+}
+
+.button33,.button22,.button3,.button30,.button31,.button32{ height:28px; line-height:28px; text-indent:11px;border-width:1px;border-style:solid;border-color:#a7b5bc #ced9df #ced9df #a7b5bc; margin-top:4px; margin-bottom:4px;}
+.button33{width:138px;}
+.button22 {width:238px;}
+.button3 {width:320px;}
+.button30{width:320px; border:0; background:#ddf2ff; cursor:default}
+.button31{	width:48px;}
+.button32{width:68px;}
+
+.textarea{line-height:24px; 
+text-indent:11px;border-right:1px solid #91c0e3; border-bottom:1px solid #91c0e3; border-left:1px #5e9ac5 solid; border-top:1px #5e9ac5 solid;	width:320px; margin-top:4px; margin-bottom:4px;}
+/***************************************************text样式end*/
+
+/**/
+/***************************表格样式*******************************/	
+.formtable{width:100%;	border-collapse:collapse;	vertical-align:middle;}
+
+.formtable td{
+    height:34px;line-height:34px;	padding-left:11px;	background-color:#FFFFFF;	font-size:13px;	overflow:hidden; cursor:default;
+}
+.formtable th{
+height:34px;line-height:34px; font-size:13px;color:#2e2e2e; text-align:left; padding-left:11px;}
+
+/***********************************************************************/
+
+#button_new {background:url(../img/samllbotton_back.jpg) repeat-x;height:24px;width:58px;text-align:center;FONT-SIZE: 13px;color:#FFFFFF; overflow:hidden; border:0;}
+#button_new2{background:url(../img/samllbotton_back.jpg) repeat-x;border:0;height:24px;FONT-SIZE: 13px;color:#FFFFFF; 
+ padding-left:8px; padding-right:8px; padding-top:2px;}
+
+.bottomback{background-color:#66CCFF; height:38px;}
+/******************************************************分页样式******/
+#PageSelectorBar {
+text-align: left;
+font-size:12px;
+	background:#FFFFFF;
+	margin:8px 8px 8px 24px;
+	overflow:hidden;
+}
+#PageSelectorMemo {
+	float: left;
+	line-height:24px;
+}
+.PageSelectorSelected {
+	color: #FF0000;
+}
+.PageSelectorNum {
+	background:url(../img/pageSelector_bg.jpg) no-repeat;
+	background-position: 0px 3px;
+	padding-left: 0px;
+	padding-right: 2px;
+	padding-top: 2px;
+	width: 20px;
+	height: 20px;
+	font-family: 宋体;
+	text-align: center;
+}
+
+#PageSelectorSelectorArea {
+	float: right;
+	line-height: 24px;
+}
+
+#PageSelectorSelectorArea img{
+margin-bottom:-3px;
+}
+/*********************************************************************************/
+
+fieldset {
+margin:8px auto 18px auto;
+padding:0px 20px 2px 20px;
+width:80%; 
+border:1px #87c3e9 solid;
+overflow:hidden;
+}
+	
+legend {
+position:relative;
+margin-top:18px;
+font-size:14px;
+color:#2e2e2e;
+
+}

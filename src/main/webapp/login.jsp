@@ -18,25 +18,25 @@
                     <img src="${pageContext.request.contextPath}/img/LoginImg/logo.jpg"/>
                 </div>
                 <div id="login_login">
-                    <c:if test="${!empty requestScope.error}">
-                        <div align="center">
-                         <span style="color: red">
-                                 ${requestScope.error}
-                         </span>
-                        </div>
-                    </c:if>
+                    <div align="center">
+                        <span id="errorMsg" style="color: red">
+                            <c:if test="${!empty requestScope.error}">
+                                ${requestScope.error}
+                            </c:if>
+                        </span>
+                    </div>
                     <form id="login" name="login" action="${pageContext.request.contextPath}/LoginServlet?method=verify" method="post">
                         <table align="center" width="533">
                             <tr>
                                 <td width="98" height="24px" align="right" class="txtname">员工号</td>
                                 <td width="152">
-                                    <input name="empid" type="text" id="username" class="textfield"/>
+                                    <input name="empid" type="text" id="empid" class="textfield" required/>
                                 </td>
                             </tr>
                             <tr>
                                 <td width="98" heigth="24px" align="right" class="txtname" >密&nbsp;&nbsp;码</td>
                                 <td>
-                                    <input name="password" type="password" id="psw" class="textfield"/>
+                                    <input name="password" type="password" id="psw" class="textfield" required/>
                                 </td>
                             </tr>
                              <tr height="38">

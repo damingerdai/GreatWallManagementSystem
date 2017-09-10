@@ -1,0 +1,104 @@
+
+/* CSS Document */	
+		
+body {
+	background-color: #ffffff;
+	margin:0;font-family:"Microsoft YaHei","微软雅黑","SimSun","宋体";
+}
+
+#Head{
+width:100%;
+height:88px;
+background:url(../img/images/headback.jpg) repeat-x;
+overflow:hidden;
+}
+#Head_logo{
+width:480px;
+float:left;
+height:88px;
+margin-left:0px;
+}
+#LOGO_left{
+
+float:left;
+width:8px;
+height:88px;
+background:url(../img/images/logobackleftleft.jpg) no-repeat;
+}
+#LOGO{
+float:left;
+height:88px;
+background:url(../img/images/logobcak.jpg) repeat-x;
+color:#000000;
+font-size:24px; line-height:88px;font-family:"SimSun","宋体"; font-weight:bolder;
+letter-spacing:1px;
+padding-left: 48px;
+}
+#LOGO_End{
+float:left;
+width:127px;
+height:88px;
+background:url(../img/images/logobackend.jpg) no-repeat;
+}
+#Head_right{
+float:right;
+height:88px;
+}
+#ShowTime{
+font-size: 12px;
+letter-spacing:1px;
+color:#FFFFFF;
+font-family:"Microsoft YaHei","微软雅黑","SimSun","宋体";
+}
+#BottonArea{
+height:34px;
+}
+#right_begin{
+float:left;
+height:34px;
+width:42px;
+background:url(../img/images/topbottom_begin.jpg) no-repeat;
+}
+#right_back{
+float:left;
+height:34px;
+font-size: 12px;
+color:#FFFFFF;
+font-family:"Microsoft YaHei","微软雅黑","SimSun","宋体";
+background:url(../img/images/topbotton.jpg) repeat-x;
+}
+#right_end{
+float:left;
+height:34px;
+width:42px;
+background:url(../img/images/topbotton_end.jpg) no-repeat;
+}
+tr td{
+       font-family:Arial, Helvetica, sans-serif;
+	   font-size:12px;
+	   font-weight:bold;
+	   color:#ffffff;
+	   line-height:19.2px;
+	   text-decoration:none;
+
+    }
+	
+tr td a{
+       font-family:Arial, Helvetica, sans-serif;
+	   font-size:12px;
+	   color:#007AC3;
+	   line-height:19.2px;
+	   text-decoration:none;
+
+    }
+#UserName{
+width:32px;
+border:0;
+background:none;
+font-family:Arial, Helvetica, sans-serif;
+	   font-size:12px;
+	   font-weight:bold;
+	   color:#ffffff;
+	   line-height:19.2px;
+	   text-decoration:none;
+}

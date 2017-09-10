@@ -1,0 +1,2 @@
+<script language="JavaScript" type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-3.2.1.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="${pageContext.request.contextPath}/js/index/menu.js" />
