@@ -3,7 +3,7 @@
 		
 body {
 	background-color: #ffffff;
-	margin:0;font-family:"Microsoft YaHei","å¾®è½¯é›…é»‘","SimSun","å®‹ä½“";
+	margin:0;font-family:"Microsoft YaHei","Î¢ÈíÑÅºÚ","SimSun","ËÎÌå";
 }
 
 #Head{
@@ -30,7 +30,7 @@ float:left;
 height:88px;
 background:url(../img/images/logobcak.jpg) repeat-x;
 color:#000000;
-font-size:24px; line-height:88px;font-family:"SimSun","å®‹ä½“"; font-weight:bolder;
+font-size:24px; line-height:88px;font-family:"SimSun","ËÎÌå"; font-weight:bolder;
 letter-spacing:1px;
 padding-left: 48px;
 }
@@ -48,7 +48,7 @@ height:88px;
 font-size: 12px;
 letter-spacing:1px;
 color:#FFFFFF;
-font-family:"Microsoft YaHei","å¾®è½¯é›…é»‘","SimSun","å®‹ä½“";
+font-family:"Microsoft YaHei","Î¢ÈíÑÅºÚ","SimSun","ËÎÌå";
 }
 #BottonArea{
 height:34px;
@@ -64,7 +64,7 @@ float:left;
 height:34px;
 font-size: 12px;
 color:#FFFFFF;
-font-family:"Microsoft YaHei","å¾®è½¯é›…é»‘","SimSun","å®‹ä½“";
+font-family:"Microsoft YaHei","Î¢ÈíÑÅºÚ","SimSun","ËÎÌå";
 background:url(../img/images/topbotton.jpg) repeat-x;
 }
 #right_end{

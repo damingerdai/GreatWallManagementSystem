@@ -7,7 +7,7 @@
     <title>长城内部管理系统——登录</title>
     <tags:style></tags:style>
 </head>
-<body style="margin: 0">
+<body style="margin: 0"  >
     <div id="bj">
         <div id="login_bj">
             <div id="loginback_up">

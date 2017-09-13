@@ -3,3 +3,4 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/icon.css" />
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/menu.css" />
 <linl rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
+<linl rel="stylesheet" href="${pageContext.request.contextPath}/css/select.css" />
